@@ -1,0 +1,10 @@
+language: csharp
+dotnet: 2.2
+script:
+  dotnet test Problems.Tests
+matrix:
+  include:
+    - bionic
+    - xenial
+    - dotnet: 2.0.0
+    os: osx
